@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-	os.system("ls >> h.txt")
+	os.system("ls > h.txt")
 	x=open("h.txt","r").read()
 	return 'Hello, World!'+x
 
